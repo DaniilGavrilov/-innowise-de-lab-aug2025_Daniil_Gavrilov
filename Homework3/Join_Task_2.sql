@@ -1,0 +1,5 @@
+-- ЗАДАЧА 2: ВЫВЕДИТЕ СПИСОК ДОСТАВОК СО СТАТУСОМ И ИМЕНЕМ КЛИЕНТА --
+SELECT STATUS, FIRST_NAME,LAST_NAME
+FROM CUSTOMERS 
+JOIN SHIPPINGS
+ON CUSTOMERS.CUSTOMER_ID = SHIPPINGS.CUSTOMER
