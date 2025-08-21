@@ -1,6 +1,0 @@
--- ЗАДАЧА 1: НАЙДИТЕ ВСЕХ КЛИЕНТОВ, КОТОРЫЕ СДЕЛАЛИ ЗАКАЗ С МАКСИМАЛЬНОЙ СУММОЙ --
-SELECT FIRST_NAME, LAST_NAME, AMOUNT
-FROM CUSTOMERS
-JOIN ORDERS
-ON CUSTOMERS.CUSTOMER_ID = ORDERS.CUSTOMER_ID 
-WHERE AMOUNT = (SELECT MAX(AMOUNT) FROM ORDERS)
